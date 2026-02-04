@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laitte</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/Images/LogoCafe.png" />
   </head>
   <body>
     <!-- Header/Navbar -->
@@ -17,22 +22,24 @@
           </a>
         </div>
         <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
           <li class="nav-item">
             <a href="#" class="nav-link"> Home </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"> About </a>
+            <a href="#about" class="nav-link"> About </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"> Menu </a>
+            <a href="#menu" class="nav-link"> Menu </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"> Gallery </a>
+            <a href="#gallery" class="nav-link"> Gallery </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"> Contact </a>
+            <a href="#contact" class="nav-link"> Contact </a>
           </li>
         </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
       </nav>
     </header>
 
@@ -45,13 +52,10 @@
             <h3 class="subtitle">
               A cozy spot serving smooth lattes in a warm, welcoming atmosphere.
             </h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus reprehenderit
-            </p>
+            <p class="description"><i>— sip, savor, and stay awhile.</i></p>
             <div class="buttons">
               <a href="#" class="button order-now">Order Now</a>
-              <a href="#" class="button contact-us">Contact Us</a>
+              <a href="#contact" class="button contact-us">Contact Us</a>
             </div>
           </div>
           <div class="hero-image-wrapper">
@@ -59,6 +63,255 @@
           </div>
         </div>
       </section>
+
+      <!-- About -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img
+              src="https://i.pinimg.com/1200x/73/a3/b0/73a3b0ca833073f4068288fac230e828.jpg"
+              alt="Laitte Image"
+              class="about-image"
+            />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">
+              Laitte Coffee House is a warm and welcoming café where carefully
+              brewed, high-quality coffee meets deliciously prepared food.
+              Created as a cozy space for connection and comfort, it invites
+              friends, families, and coffee lovers to slow down, relax, and
+              enjoy every moment. Whether you’re stopping by for a quick cup, a
+              hearty meal, or a sweet treat, Laitte Coffee House is a place to
+              gather, unwind, and share good times any time of the day.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img
+                src="/Images/CheeseCake.png"
+                alt="CheeseCake"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Dessert</h3>
+                <p>
+                  Freshly made treats that add the perfect sweet ending to every
+                  meal.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="/Images/Matcha.png" alt="Matcha" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Cold Beverages</h3>
+                <p>
+                  Refreshing, chilled drinks crafted to cool you down and keep
+                  you energized.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="/Images/Carbonara.png"
+                alt="Carbonara"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Pasta</h3>
+                <p>
+                  Hearty pasta dishes made with rich flavors and comforting
+                  sauces.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="/Images/ComboMeals.png"
+                alt="ComboMeals"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Combo Meals</h3>
+                <p>
+                  Perfectly paired meals for a satisfying and complete dining
+                  experience.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="/Images/Rice Meals.png"
+                alt="Rice Meals"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Rice Meals</h3>
+                <p>
+                  Classic rice meals served hot, flavorful, and filling for any
+                  craving.
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="/Images/Ice Cream.png"
+                alt="Ice Cream"
+                class="menu-image"
+                style="transform: rotate(-20deg)"
+              />
+              <div class="menu-details">
+                <h3 class="name">Ice Cream</h3>
+                <p>Creamy, smooth scoops of happiness in every bite.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Gallery -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="/Images/Gallery/Gallery1.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="/Images/Gallery/Gallery2.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="/Images/Gallery/Gallery3.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="/Images/Gallery/Gallery4.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="/Images/Gallery/Gallery5.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="/Images/Gallery/Gallery6.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>La Guardia St, Lahug, Cebu City, 6000 Cebu</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>Laitte.CoffeeHouse@gmail.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>0927-205-4601</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday-Friday: 9:00am - 5:00pm</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday-Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.Laitte.com</p>
+            </li>
+          </ul>
+
+          <form action="#" class="contact-form">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="form-input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your email"
+              class="form-input"
+              required
+            />
+            <textarea placeholder="Your message" class="form-input"></textarea>
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 Coffee Shop</p>
+
+          <div class="social-link-list">
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund Policy</a>
+          </p>
+        </div>
+      </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
