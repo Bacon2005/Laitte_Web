@@ -68,7 +68,7 @@ header {
 ul {
   list-style: none;
 }
-/* Hero Design */
+/* Navigation Design */
 .navbar.section-content {
   margin: 0 auto;
   padding: 15px 50px;
@@ -104,18 +104,20 @@ button {
   color: white;
 }
 
-/* Hero Section */
+.titleContainer {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 8px; /* space between logo and text */
+}
+
 .img-logo {
   height: 40px;
   width: 40px;
   object-fit: contain;
 }
 
-.titleContainer {
-  display: flex;
-  align-items: center; /* vertical alignment */
-  gap: 8px; /* space between logo and text */
-}
+/* Hero Section */
+
 .hero-section .hero-image {
   height: 450px;
   width: 450px;
